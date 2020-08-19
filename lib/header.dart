@@ -182,7 +182,7 @@ class SocialAccounts extends StatelessWidget {
         AntDesign.linkedin_square,
         color: Colors.white,
       ).mdClick(() {
-        launch("https://github.com/iampawan");
+        launch("https://www.linkedin.com/in/vaishali-chaudhary-055bb613a/");
       }).make()
     ].hStack();
   }
