@@ -32,7 +32,7 @@ height:  MediaQuery.of(context).size.height,
             children: [
 //              SizedBox(height:10),
               Text(
-                'Eductaion',style: TextStyle(color: Colors.green,fontWeight: FontWeight.bold,fontSize: 25),
+                'Education',style: TextStyle(color: Colors.green,fontWeight: FontWeight.bold,fontSize: 25),
               ),
               SizedBox(height:10),
               Row(

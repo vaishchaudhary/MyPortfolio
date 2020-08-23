@@ -9,7 +9,7 @@ class RecentWorkSection extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Container(
-     
+
       width: double.infinity,
 
       // just for demo
@@ -26,7 +26,7 @@ class RecentWorkSection extends StatelessWidget {
 
           SizedBox(height:10),
           Text(
-            'Eductaion',style: TextStyle(color: Colors.green,fontWeight: FontWeight.bold,fontSize: 25),
+            'Education',style: TextStyle(color: Colors.green,fontWeight: FontWeight.bold,fontSize: 25),
           ),
           SizedBox(height:10),
           SizedBox(
