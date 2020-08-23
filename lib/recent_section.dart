@@ -18,7 +18,7 @@ class RecentWorkSection extends StatelessWidget {
         color: Color(0xFFF7E8FF).withOpacity(0.3),
         image: DecorationImage(
           fit: BoxFit.cover,
-          image: AssetImage("assets/backedu1.jpg"),
+          image: AssetImage("assets/landback.jpg"),
         ),
       ),
       child: Column(
