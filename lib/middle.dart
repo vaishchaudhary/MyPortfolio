@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foldable_sidebar/foldable_sidebar.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class MiddleScreen extends StatelessWidget {
@@ -17,6 +18,7 @@ class MiddleScreen extends StatelessWidget {
                 .white
                 .make(),
             20.widthBox,
+
             Expanded(
                 child: VxSwiper(
               enlargeCenterPage: true,
@@ -29,7 +31,7 @@ class MiddleScreen extends StatelessWidget {
                 ProjectWidget(title: "Portfolio"),
               ],
               height: 170,
-              viewportFraction: context.isMobile ? 0.75 : 0.4,
+              viewportFraction: context.isMobile ? 0.75 : 0.65,
               autoPlay: true,
               autoPlayAnimationDuration: 1.seconds,
             ))

@@ -56,7 +56,52 @@ class HeaderScreen extends StatelessWidget {
                   ),
                 )
               ],
-            ).w(context.screenWidth)
+            ).w(context.screenWidth),
+
+
+//                  Row(
+//                    crossAxisAlignment: CrossAxisAlignment.center,
+//                    mainAxisAlignment: MainAxisAlignment.center,
+//                    children: [
+//                      SizedBox(
+//
+//                        width: context.screenWidth-100,
+//                      ),
+//          Column(
+//            children: [
+//            SizedBox(
+//            height: 30,
+//          ),
+//                    ClipOval(
+//
+//                          child:
+//                        Material(
+//
+//                          color: Colors.white,
+//
+//                          child:
+//
+//                              InkWell(
+//                                // inkwell color
+//
+//                                child: EducationIcon().shimmer(primaryColor: Colors.lightGreenAccent,),
+//                                onTap: () {
+//
+//                                },
+//                              ),
+//
+//                          )
+//
+//                        ).w(60).h(60),
+//]
+//                    ),
+//   SizedBox(
+//     width: 10,
+//   )
+//                    ],
+//
+//
+//            ),
           ],
         )
       ]))
@@ -87,7 +132,7 @@ class IntroductionWidget extends StatelessWidget {
               .maxLines(5)
               .make()
               .w( context.screenWidth),
-          20.heightBox,
+          5.heightBox,
         ].vStack(),
 
 
@@ -97,10 +142,12 @@ class IntroductionWidget extends StatelessWidget {
           },
           hoverColor: Vx.purple700,
           shape: Vx.roundedSm,
+
           color: Colors.green[400],
           textColor: Coolors.primaryColor,
           child: "Visit Daffodilsw.com".text.make(),
-        ).h(50)
+
+        ).w(context.screenWidth).h(50)
       ],
       // crossAlignment: CrossAxisAlignment.center,
       alignment: MainAxisAlignment.spaceEvenly,
@@ -124,6 +171,26 @@ class CustomAppBar extends StatelessWidget {
   }
 }
 
+class EducationIcon extends StatelessWidget {
+  const EducationIcon({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return
+
+    Icon(
+      Icons.school,
+
+      color: Colors.lightGreenAccent,
+      size: 50,
+    ).mdClick(() {
+
+    }).make();
+
+  }
+}
 class PictureWidget extends StatelessWidget {
   const PictureWidget({
     Key key,
@@ -152,35 +219,35 @@ class SocialAccounts extends StatelessWidget {
     return [
       Icon(
         AntDesign.twitter,
-        color: Colors.white,
+        color: Colors.lightGreenAccent,
       ).mdClick(() {
         launch("https://twitter.com/Vaishal17084535");
       }).make(),
       20.widthBox,
       Icon(
         AntDesign.instagram,
-        color: Colors.white,
+        color: Colors.lightGreenAccent,
       ).mdClick(() {
         launch("https://www.instagram.com/vchaudhary12/");
       }).make(),
       20.widthBox,
       Icon(
         AntDesign.facebook_square,
-        color: Colors.white,
+        color: Colors.lightGreenAccent,
       ).mdClick(() {
         launch("https://www.facebook.com/vaishali.chaudhary.1998");
       }).make(),
       20.widthBox,
       Icon(
         AntDesign.github,
-        color: Colors.white,
+        color: Colors.lightGreenAccent    ,
       ).mdClick(() {
         launch("https://github.com/vaishaliunthinkable");
       }).make(),
       20.widthBox,
       Icon(
         AntDesign.linkedin_square,
-        color: Colors.white,
+        color: Colors.lightGreenAccent,
       ).mdClick(() {
         launch("https://www.linkedin.com/in/vaishali-chaudhary-055bb613a/");
       }).make()

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_x/colors.dart';
-
+import 'splashscreen.dart';
 import 'home.dart';
 
 void main() {
@@ -15,13 +15,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'PortfolioX',
       debugShowCheckedModeBanner: false,
+
+
       theme: ThemeData(
         primarySwatch: Colors.orange,
         accentColor: Coolors.secondaryColor,
         textTheme: GoogleFonts.poppinsTextTheme(),
         visualDensity: VisualDensity.adaptivePlatformDensity,
+
       ),
-      home: HomeScreen(),
+
+      home: SplashScreen(),
+
     );
   }
 }

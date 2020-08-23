@@ -17,6 +17,7 @@ class FooterScreen extends StatelessWidget {
         GestureDetector(
           child:  VxDevice(
             mobile: VStack(
+
               [
                 "Need a Developer?\nLet's talk.".text.center.white.xl2.make(),
                 10.heightBox,
